@@ -174,3 +174,72 @@ a{
 #supply a:hover{
     text-decoration: underline;
 }
+
+.click a{
+    color: #fff;
+    display: inline-block;
+    
+    cursor: pointer;
+    text-decoration: none;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+    min-width: 96px;
+    padding: 9px 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    white-space: nowrap;
+
+}
+
+.model{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+}
+.model:target{
+    display: block;
+}
+.model .box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: transparent 1px solid;
+    width: 70%;
+    max-height: 500px;
+    background-color: #1a73e8;
+    border-radius: 4px;
+}
+
+.model .box h1{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: #fff 1px solid;
+}
+.model .box .close{
+    float:right;
+    color: #fff;
+    font-size: 16px;
+    margin-top: -10px;  
+    font-style: italic;
+    margin-right: 10px;
+    border-left: #fff 1px solid;
+    padding-left: 10px;
+    
+
+}
+
